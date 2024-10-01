@@ -66,7 +66,7 @@ const App = () => {
         ))}
       </ProductList>
 
-      <h2>Product Filter</h2>
+      <h2>Product Filter based on Price</h2>
       <ProductFilter filter={filter} onFilter={handleFilter} />
 
       {products
