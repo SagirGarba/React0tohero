@@ -14,14 +14,15 @@
   border: 0;
   background: none;
   font-size: 30px;
-
-  &:hover {
-    top: -13px;
-    right: -23px;
-    font-size: 34px;
-    border: 0;
-  }
+  cursor: pointer;
 }
+
+.favourite:hover {
+  top: -13px;
+  right: -23px;
+  font-size: 34px;
+}
+
 .list {
   list-style: none;
   padding: 0;
@@ -31,7 +32,30 @@
   font-size: 15px;
   color: lightgreen;
 }
+
 .notAvailable {
   font-size: 15px;
   color: lightsalmon;
+}
+
+/* Responsive design for phones and tablets */
+@media (max-width: 768px) {
+  .container {
+    padding: 12px;
+  }
+
+  .favourite {
+    top: -10px;
+    right: -16px;
+    font-size: 28px;
+  }
+
+  .favourite:hover {
+    font-size: 30px;
+  }
+
+  img {
+    height: 96px;
+    width: 96px;
+  }
 }

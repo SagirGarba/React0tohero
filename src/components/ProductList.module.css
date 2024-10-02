@@ -1,4 +1,13 @@
 .list1 {
   display: flex;
   gap: 15px;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Responsive design for phones and tablets */
+@media (max-width: 768px) {
+  .list1 {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
